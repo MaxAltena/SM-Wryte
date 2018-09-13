@@ -1,8 +1,8 @@
-# WriteUp
+# Wryte
 
-WriteUp is een app waar je dagelijks een scenario krijgt waar je over begint te schrijven.
+Wryte is een app waar je dagelijks een scenario krijgt waar je over begint te schrijven.
 
-WriteUp is an app that gives you a scenario daily to get you started with writing.
+Wryte is an app that gives you a scenario daily to get you started with writing.
 
 ## Contributors
 
