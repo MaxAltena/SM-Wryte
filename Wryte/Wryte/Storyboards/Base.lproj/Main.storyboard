@@ -22,15 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-Wryte" translatesAutoresizingMaskIntoConstraints="NO" id="35l-Ge-lSS">
-                                <rect key="frame" x="62" y="208" width="250" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Wryte" translatesAutoresizingMaskIntoConstraints="NO" id="35l-Ge-lSS">
+                                <rect key="frame" x="62" y="208" width="251" height="251"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-e6-8Z4">
-                                <rect key="frame" x="112" y="527" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-e6-8Z4" customClass="RoundedButton" customModule="Wryte" customModuleProvider="target">
+                                <rect key="frame" x="113" y="524" width="149" height="55"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.13333333333333333" green="0.34509803921568627" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Get started">
                                     <color key="titleColor" red="0.13333333333333333" green="0.34509803921568627" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -41,6 +39,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="35l-Ge-lSS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="6VP-ae-eEZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e1d-e6-8Z4" secondAttribute="trailing" constant="113" id="B24-5e-D6T"/>
+                            <constraint firstItem="35l-Ge-lSS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GqF-KV-oSx"/>
+                            <constraint firstItem="e1d-e6-8Z4" firstAttribute="top" secondItem="35l-Ge-lSS" secondAttribute="bottom" constant="65" id="Rt8-gt-XqD"/>
+                            <constraint firstItem="35l-Ge-lSS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="aDF-Mk-TZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e1d-e6-8Z4" secondAttribute="bottom" constant="88" id="eJi-O7-SH4"/>
+                            <constraint firstItem="35l-Ge-lSS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f0e-NN-D0E"/>
+                            <constraint firstItem="e1d-e6-8Z4" firstAttribute="centerX" secondItem="35l-Ge-lSS" secondAttribute="centerX" id="j82-fU-qK7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -55,7 +63,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Wk-5i-D90">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="am9-7h-NX6" kind="relationship" relationship="viewControllers" id="ru7-hk-3g1"/>
@@ -109,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1823" y="607"/>
         </scene>
-        <!--Profile-->
+        <!--Settings-->
         <scene sceneID="jfz-ZY-p2l">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="5Sk-YH-40m" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Settings" id="5Sk-YH-40m" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="B5h-iQ-ADL"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOP-Ca-aFC" userLabel="First Responder" sceneMemberID="firstResponder"/>

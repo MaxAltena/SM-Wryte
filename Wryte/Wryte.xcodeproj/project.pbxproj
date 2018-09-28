@@ -13,7 +13,8 @@
 		501D9C6D2154DC7A0089B4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501D9C6C2154DC7A0089B4A4 /* Assets.xcassets */; };
 		501D9C702154DC7A0089B4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D9C6E2154DC7A0089B4A4 /* LaunchScreen.storyboard */; };
 		501D9C7C2154E8040089B4A4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D9C7B2154E8040089B4A4 /* MainTabBarViewController.swift */; };
-		501D9C8B2154ECA90089B4A4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D9C8A2154ECA90089B4A4 /* Profile.storyboard */; };
+		501D9C8B2154ECA90089B4A4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D9C8A2154ECA90089B4A4 /* Settings.storyboard */; };
+		5086D4D3215EAD02009C8D39 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D4D2215EAD02009C8D39 /* RoundedButton.swift */; };
 		5090DBA62154EF0100D0B8C9 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA22154EF0100D0B8C9 /* Challenge.storyboard */; };
 		5090DBA72154EF0100D0B8C9 /* Read.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA32154EF0100D0B8C9 /* Read.storyboard */; };
 		5090DBA82154EF0100D0B8C9 /* Daily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA42154EF0100D0B8C9 /* Daily.storyboard */; };
@@ -58,7 +59,8 @@
 		501D9C6F2154DC7A0089B4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		501D9C712154DC7A0089B4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501D9C7B2154E8040089B4A4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		501D9C8A2154ECA90089B4A4 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		501D9C8A2154ECA90089B4A4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		5086D4D2215EAD02009C8D39 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = Components/RoundedButton.swift; sourceTree = SOURCE_ROOT; };
 		5090DBA22154EF0100D0B8C9 /* Challenge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
 		5090DBA32154EF0100D0B8C9 /* Read.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Read.storyboard; sourceTree = "<group>"; };
 		5090DBA42154EF0100D0B8C9 /* Daily.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Daily.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				501D9C652154DC710089B4A4 /* AppDelegate.swift */,
 				501D9C712154DC7A0089B4A4 /* Info.plist */,
 				501D9C7E2154E8220089B4A4 /* Controllers */,
+				5086D4D4215EAD25009C8D39 /* Components */,
 				501D9C7D2154E80E0089B4A4 /* Storyboards */,
 				5090DBAA2154F30300D0B8C9 /* Fonts */,
 			);
@@ -143,7 +146,7 @@
 				5090DBA42154EF0100D0B8C9 /* Daily.storyboard */,
 				5090DBA32154EF0100D0B8C9 /* Read.storyboard */,
 				5090DBA52154EF0100D0B8C9 /* Write.storyboard */,
-				501D9C8A2154ECA90089B4A4 /* Profile.storyboard */,
+				501D9C8A2154ECA90089B4A4 /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -156,6 +159,15 @@
 				5090DBE32154F48900D0B8C9 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5086D4D4215EAD25009C8D39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5086D4D2215EAD02009C8D39 /* RoundedButton.swift */,
+			);
+			name = Components;
+			path = ../Components;
 			sourceTree = "<group>";
 		};
 		5090DBAA2154F30300D0B8C9 /* Fonts */ = {
@@ -271,7 +283,7 @@
 				5090DBDE2154F30400D0B8C9 /* JosefinSans-ThinItalic.ttf in Resources */,
 				5090DBE22154F30400D0B8C9 /* Merriweather-BlackItalic.otf in Resources */,
 				5090DBD62154F30400D0B8C9 /* JosefinSans-Regular.ttf in Resources */,
-				501D9C8B2154ECA90089B4A4 /* Profile.storyboard in Resources */,
+				501D9C8B2154ECA90089B4A4 /* Settings.storyboard in Resources */,
 				5090DBDA2154F30400D0B8C9 /* Merriweather-Italic.otf in Resources */,
 				5090DBDB2154F30400D0B8C9 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				501D9C6D2154DC7A0089B4A4 /* Assets.xcassets in Resources */,
@@ -298,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				501D9C682154DC710089B4A4 /* LoginViewController.swift in Sources */,
+				5086D4D3215EAD02009C8D39 /* RoundedButton.swift in Sources */,
 				501D9C7C2154E8040089B4A4 /* MainTabBarViewController.swift in Sources */,
 				5090DBE42154F48900D0B8C9 /* ProfileViewController.swift in Sources */,
 				501D9C662154DC710089B4A4 /* AppDelegate.swift in Sources */,
@@ -445,7 +458,7 @@
 		501D9C752154DC7A0089B4A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Wryte";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47B7QR8HVH;
 				INFOPLIST_FILE = Wryte/Info.plist;
@@ -463,7 +476,7 @@
 		501D9C762154DC7A0089B4A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Wryte";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 47B7QR8HVH;
 				INFOPLIST_FILE = Wryte/Info.plist;

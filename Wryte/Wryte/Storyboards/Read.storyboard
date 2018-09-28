@@ -28,11 +28,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rbK-M4-xxi"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Read" id="cXs-Ia-JIW"/>
+                    <tabBarItem key="tabBarItem" title="Read" image="readTabIcon" id="cXs-Ia-JIW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSR-DC-SQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4426" y="582"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="readTabIcon" width="25" height="25"/>
+    </resources>
 </document>
