@@ -5,18 +5,72 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Daily-->
-        <scene sceneID="jIi-be-rd4">
+        <scene sceneID="A6Q-ky-PcO">
             <objects>
-                <tableViewController id="lrh-EN-Ajo" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Daily" id="5Gz-SY-0dd"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5hp-Tt-voh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="nxO-Hv-GpE" customClass="DailyViewController" customModule="Wryte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZF4-pC-dkO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptU-dQ-7C0">
+                                <rect key="frame" x="25" y="89" width="325" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzP-5x-qYb" customClass="RoundedButton" customModule="Wryte" customModuleProvider="target">
+                                <rect key="frame" x="200" y="558" width="150" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                                <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Publish" image="forward-colored">
+                                    <color key="titleColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" text="{&quot;Start writing your story...&quot;}" translatesAutoresizingMaskIntoConstraints="NO" id="Yja-Cb-khH">
+                                <rect key="frame" x="25" y="356" width="325" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Md1-41-VUh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Daily" id="pJG-uS-Isx"/>
+                    <connections>
+                        <outlet property="dailyPrompt" destination="ptU-dQ-7C0" id="Tyx-66-4TF"/>
+                        <outlet property="publishButton" destination="RzP-5x-qYb" id="APO-qq-KFw"/>
+                        <outlet property="textView" destination="Yja-Cb-khH" id="ndd-bj-2NQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBM-7j-jaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6114" y="582"/>
+            <point key="canvasLocation" x="5848.8000000000002" y="580.65967016491754"/>
         </scene>
         <!--Daily-->
         <scene sceneID="f5A-N5-8QY">
@@ -27,9 +81,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Qj-S8-WYL">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Merriweather-Bold" family="Merriweather" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="lrh-EN-Ajo" kind="relationship" relationship="rootViewController" id="oq3-qk-e9Y"/>
+                        <segue destination="nxO-Hv-GpE" kind="relationship" relationship="rootViewController" id="N6K-55-1BC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBa-3b-vrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -39,5 +96,6 @@
     </scenes>
     <resources>
         <image name="dailyTabIcon" width="25" height="25"/>
+        <image name="forward-colored" width="50.159999847412109" height="50.400001525878906"/>
     </resources>
 </document>

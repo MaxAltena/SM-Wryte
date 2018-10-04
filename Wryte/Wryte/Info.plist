@@ -34,7 +34,34 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>JosefinSans-Italic.ttf</string>
+		<string>JosefinSans-Thin.ttf</string>
+		<string>JosefinSans-Bold.ttf</string>
+		<string>Merriweather-BoldItalic.otf</string>
+		<string>OpenSans-Semibold.ttf</string>
+		<string>JosefinSans-Light.ttf</string>
+		<string>JosefinSans-LightItalic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>Merriweather-Bold.otf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>Merriweather-Regular.otf</string>
+		<string>Merriweather-Light.otf</string>
+		<string>JosefinSans-SemiBold.ttf</string>
+		<string>Merriweather-Black.otf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>JosefinSans-Regular.ttf</string>
+		<string>Merriweather-LightItalic.otf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>Merriweather-Italic.otf</string>
+		<string>OpenSans-SemiboldItalic.ttf</string>
+		<string>JosefinSans-BoldItalic.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>JosefinSans-ThinItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>JosefinSans-SemiBoldItalic.ttf</string>
+		<string>Merriweather-BlackItalic.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

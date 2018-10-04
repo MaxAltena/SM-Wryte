@@ -14,40 +14,41 @@
 		501D9C702154DC7A0089B4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D9C6E2154DC7A0089B4A4 /* LaunchScreen.storyboard */; };
 		501D9C7C2154E8040089B4A4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D9C7B2154E8040089B4A4 /* MainTabBarViewController.swift */; };
 		501D9C8B2154ECA90089B4A4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501D9C8A2154ECA90089B4A4 /* Settings.storyboard */; };
-		5086D4D3215EAD02009C8D39 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5086D4D2215EAD02009C8D39 /* RoundedButton.swift */; };
 		5090DBA62154EF0100D0B8C9 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA22154EF0100D0B8C9 /* Challenge.storyboard */; };
 		5090DBA72154EF0100D0B8C9 /* Read.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA32154EF0100D0B8C9 /* Read.storyboard */; };
 		5090DBA82154EF0100D0B8C9 /* Daily.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA42154EF0100D0B8C9 /* Daily.storyboard */; };
 		5090DBA92154EF0100D0B8C9 /* Write.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBA52154EF0100D0B8C9 /* Write.storyboard */; };
-		5090DBC72154F30400D0B8C9 /* Merriweather-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBAB2154F30400D0B8C9 /* Merriweather-BoldItalic.otf */; };
-		5090DBC82154F30400D0B8C9 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBAC2154F30400D0B8C9 /* JosefinSans-Italic.ttf */; };
-		5090DBC92154F30400D0B8C9 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBAD2154F30400D0B8C9 /* OpenSans-Semibold.ttf */; };
-		5090DBCA2154F30400D0B8C9 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBAE2154F30400D0B8C9 /* JosefinSans-Thin.ttf */; };
-		5090DBCB2154F30400D0B8C9 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBAF2154F30400D0B8C9 /* JosefinSans-Bold.ttf */; };
-		5090DBCC2154F30400D0B8C9 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB02154F30400D0B8C9 /* JosefinSans-Light.ttf */; };
-		5090DBCD2154F30400D0B8C9 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB12154F30400D0B8C9 /* JosefinSans-LightItalic.ttf */; };
-		5090DBCE2154F30400D0B8C9 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB22154F30400D0B8C9 /* OpenSans-Light.ttf */; };
-		5090DBCF2154F30400D0B8C9 /* Merriweather-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB32154F30400D0B8C9 /* Merriweather-Bold.otf */; };
-		5090DBD02154F30400D0B8C9 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB42154F30400D0B8C9 /* OpenSans-Italic.ttf */; };
-		5090DBD12154F30400D0B8C9 /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB52154F30400D0B8C9 /* Merriweather-Regular.otf */; };
-		5090DBD22154F30400D0B8C9 /* Merriweather-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB62154F30400D0B8C9 /* Merriweather-Light.otf */; };
-		5090DBD32154F30400D0B8C9 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB72154F30400D0B8C9 /* JosefinSans-SemiBold.ttf */; };
-		5090DBD42154F30400D0B8C9 /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB82154F30400D0B8C9 /* Merriweather-Black.otf */; };
-		5090DBD52154F30400D0B8C9 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBB92154F30400D0B8C9 /* OpenSans-ExtraBold.ttf */; };
-		5090DBD62154F30400D0B8C9 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBBA2154F30400D0B8C9 /* JosefinSans-Regular.ttf */; };
-		5090DBD72154F30400D0B8C9 /* Merriweather-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBBB2154F30400D0B8C9 /* Merriweather-LightItalic.otf */; };
-		5090DBD82154F30400D0B8C9 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBBC2154F30400D0B8C9 /* OpenSans-LightItalic.ttf */; };
-		5090DBD92154F30400D0B8C9 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBBD2154F30400D0B8C9 /* OpenSans-Bold.ttf */; };
-		5090DBDA2154F30400D0B8C9 /* Merriweather-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBBE2154F30400D0B8C9 /* Merriweather-Italic.otf */; };
-		5090DBDB2154F30400D0B8C9 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBBF2154F30400D0B8C9 /* OpenSans-SemiboldItalic.ttf */; };
-		5090DBDC2154F30400D0B8C9 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC02154F30400D0B8C9 /* JosefinSans-BoldItalic.ttf */; };
-		5090DBDD2154F30400D0B8C9 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC12154F30400D0B8C9 /* OpenSans-ExtraBoldItalic.ttf */; };
-		5090DBDE2154F30400D0B8C9 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC22154F30400D0B8C9 /* JosefinSans-ThinItalic.ttf */; };
-		5090DBDF2154F30400D0B8C9 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC32154F30400D0B8C9 /* OpenSans-Regular.ttf */; };
-		5090DBE02154F30400D0B8C9 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC42154F30400D0B8C9 /* OpenSans-BoldItalic.ttf */; };
-		5090DBE12154F30400D0B8C9 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC52154F30400D0B8C9 /* JosefinSans-SemiBoldItalic.ttf */; };
-		5090DBE22154F30400D0B8C9 /* Merriweather-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5090DBC62154F30400D0B8C9 /* Merriweather-BlackItalic.otf */; };
 		5090DBE42154F48900D0B8C9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5090DBE32154F48900D0B8C9 /* ProfileViewController.swift */; };
+		509CCA9321656ECB00A194C7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CCA9221656ECB00A194C7 /* RoundedButton.swift */; };
+		50C4683721662D36000187D7 /* Merriweather-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681B21662D35000187D7 /* Merriweather-BoldItalic.otf */; };
+		50C4683821662D36000187D7 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681C21662D35000187D7 /* JosefinSans-Italic.ttf */; };
+		50C4683921662D36000187D7 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681D21662D35000187D7 /* OpenSans-Semibold.ttf */; };
+		50C4683A21662D36000187D7 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681E21662D35000187D7 /* JosefinSans-Thin.ttf */; };
+		50C4683B21662D36000187D7 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681F21662D35000187D7 /* JosefinSans-Bold.ttf */; };
+		50C4683C21662D36000187D7 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682021662D35000187D7 /* JosefinSans-Light.ttf */; };
+		50C4683D21662D36000187D7 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682121662D35000187D7 /* JosefinSans-LightItalic.ttf */; };
+		50C4683E21662D36000187D7 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682221662D35000187D7 /* OpenSans-Light.ttf */; };
+		50C4683F21662D36000187D7 /* Merriweather-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682321662D35000187D7 /* Merriweather-Bold.otf */; };
+		50C4684021662D36000187D7 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682421662D35000187D7 /* OpenSans-Italic.ttf */; };
+		50C4684121662D36000187D7 /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682521662D35000187D7 /* Merriweather-Regular.otf */; };
+		50C4684221662D36000187D7 /* Merriweather-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682621662D35000187D7 /* Merriweather-Light.otf */; };
+		50C4684321662D36000187D7 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682721662D35000187D7 /* JosefinSans-SemiBold.ttf */; };
+		50C4684421662D36000187D7 /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682821662D35000187D7 /* Merriweather-Black.otf */; };
+		50C4684521662D36000187D7 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682921662D35000187D7 /* OpenSans-ExtraBold.ttf */; };
+		50C4684621662D36000187D7 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682A21662D35000187D7 /* JosefinSans-Regular.ttf */; };
+		50C4684721662D36000187D7 /* Merriweather-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682B21662D35000187D7 /* Merriweather-LightItalic.otf */; };
+		50C4684821662D36000187D7 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682C21662D35000187D7 /* OpenSans-LightItalic.ttf */; };
+		50C4684921662D36000187D7 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682D21662D35000187D7 /* OpenSans-Bold.ttf */; };
+		50C4684A21662D36000187D7 /* Merriweather-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682E21662D35000187D7 /* Merriweather-Italic.otf */; };
+		50C4684B21662D36000187D7 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4682F21662D35000187D7 /* OpenSans-SemiboldItalic.ttf */; };
+		50C4684C21662D36000187D7 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683021662D35000187D7 /* JosefinSans-BoldItalic.ttf */; };
+		50C4684D21662D36000187D7 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683121662D35000187D7 /* OpenSans-ExtraBoldItalic.ttf */; };
+		50C4684E21662D36000187D7 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683221662D35000187D7 /* JosefinSans-ThinItalic.ttf */; };
+		50C4684F21662D36000187D7 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683321662D35000187D7 /* OpenSans-Regular.ttf */; };
+		50C4685021662D36000187D7 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683421662D35000187D7 /* OpenSans-BoldItalic.ttf */; };
+		50C4685121662D36000187D7 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683521662D35000187D7 /* JosefinSans-SemiBoldItalic.ttf */; };
+		50C4685221662D36000187D7 /* Merriweather-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683621662D35000187D7 /* Merriweather-BlackItalic.otf */; };
+		50C46854216630F3000187D7 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C46853216630F2000187D7 /* DailyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,40 +61,41 @@
 		501D9C712154DC7A0089B4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501D9C7B2154E8040089B4A4 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		501D9C8A2154ECA90089B4A4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		5086D4D2215EAD02009C8D39 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = Components/RoundedButton.swift; sourceTree = SOURCE_ROOT; };
 		5090DBA22154EF0100D0B8C9 /* Challenge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
 		5090DBA32154EF0100D0B8C9 /* Read.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Read.storyboard; sourceTree = "<group>"; };
 		5090DBA42154EF0100D0B8C9 /* Daily.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Daily.storyboard; sourceTree = "<group>"; };
 		5090DBA52154EF0100D0B8C9 /* Write.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Write.storyboard; sourceTree = "<group>"; };
-		5090DBAB2154F30400D0B8C9 /* Merriweather-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.otf"; sourceTree = "<group>"; };
-		5090DBAC2154F30400D0B8C9 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
-		5090DBAD2154F30400D0B8C9 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		5090DBAE2154F30400D0B8C9 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
-		5090DBAF2154F30400D0B8C9 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
-		5090DBB02154F30400D0B8C9 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
-		5090DBB12154F30400D0B8C9 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		5090DBB22154F30400D0B8C9 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		5090DBB32154F30400D0B8C9 /* Merriweather-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.otf"; sourceTree = "<group>"; };
-		5090DBB42154F30400D0B8C9 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		5090DBB52154F30400D0B8C9 /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
-		5090DBB62154F30400D0B8C9 /* Merriweather-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.otf"; sourceTree = "<group>"; };
-		5090DBB72154F30400D0B8C9 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		5090DBB82154F30400D0B8C9 /* Merriweather-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.otf"; sourceTree = "<group>"; };
-		5090DBB92154F30400D0B8C9 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		5090DBBA2154F30400D0B8C9 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
-		5090DBBB2154F30400D0B8C9 /* Merriweather-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.otf"; sourceTree = "<group>"; };
-		5090DBBC2154F30400D0B8C9 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		5090DBBD2154F30400D0B8C9 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		5090DBBE2154F30400D0B8C9 /* Merriweather-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.otf"; sourceTree = "<group>"; };
-		5090DBBF2154F30400D0B8C9 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
-		5090DBC02154F30400D0B8C9 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		5090DBC12154F30400D0B8C9 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		5090DBC22154F30400D0B8C9 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
-		5090DBC32154F30400D0B8C9 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		5090DBC42154F30400D0B8C9 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		5090DBC52154F30400D0B8C9 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		5090DBC62154F30400D0B8C9 /* Merriweather-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.otf"; sourceTree = "<group>"; };
 		5090DBE32154F48900D0B8C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		509CCA9221656ECB00A194C7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		50C4681B21662D35000187D7 /* Merriweather-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.otf"; sourceTree = "<group>"; };
+		50C4681C21662D35000187D7 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
+		50C4681D21662D35000187D7 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		50C4681E21662D35000187D7 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
+		50C4681F21662D35000187D7 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
+		50C4682021662D35000187D7 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
+		50C4682121662D35000187D7 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		50C4682221662D35000187D7 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		50C4682321662D35000187D7 /* Merriweather-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.otf"; sourceTree = "<group>"; };
+		50C4682421662D35000187D7 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		50C4682521662D35000187D7 /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
+		50C4682621662D35000187D7 /* Merriweather-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.otf"; sourceTree = "<group>"; };
+		50C4682721662D35000187D7 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		50C4682821662D35000187D7 /* Merriweather-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.otf"; sourceTree = "<group>"; };
+		50C4682921662D35000187D7 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		50C4682A21662D35000187D7 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
+		50C4682B21662D35000187D7 /* Merriweather-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.otf"; sourceTree = "<group>"; };
+		50C4682C21662D35000187D7 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		50C4682D21662D35000187D7 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		50C4682E21662D35000187D7 /* Merriweather-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.otf"; sourceTree = "<group>"; };
+		50C4682F21662D35000187D7 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		50C4683021662D35000187D7 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		50C4683121662D35000187D7 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		50C4683221662D35000187D7 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		50C4683321662D35000187D7 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		50C4683421662D35000187D7 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		50C4683521662D35000187D7 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		50C4683621662D35000187D7 /* Merriweather-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.otf"; sourceTree = "<group>"; };
+		50C46853216630F2000187D7 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyViewController.swift; path = Wryte/Controllers/DailyViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +132,9 @@
 				501D9C652154DC710089B4A4 /* AppDelegate.swift */,
 				501D9C712154DC7A0089B4A4 /* Info.plist */,
 				501D9C7E2154E8220089B4A4 /* Controllers */,
-				5086D4D4215EAD25009C8D39 /* Components */,
+				509CCA9121656EBD00A194C7 /* Components */,
+				50C4681A21662D35000187D7 /* Fonts */,
 				501D9C7D2154E80E0089B4A4 /* Storyboards */,
-				5090DBAA2154F30300D0B8C9 /* Fonts */,
 			);
 			path = Wryte;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 		501D9C7E2154E8220089B4A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				50C46853216630F2000187D7 /* DailyViewController.swift */,
 				501D9C672154DC710089B4A4 /* LoginViewController.swift */,
 				501D9C7B2154E8040089B4A4 /* MainTabBarViewController.swift */,
 				5090DBE32154F48900D0B8C9 /* ProfileViewController.swift */,
@@ -161,46 +164,45 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5086D4D4215EAD25009C8D39 /* Components */ = {
+		509CCA9121656EBD00A194C7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				5086D4D2215EAD02009C8D39 /* RoundedButton.swift */,
+				509CCA9221656ECB00A194C7 /* RoundedButton.swift */,
 			);
-			name = Components;
-			path = ../Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		5090DBAA2154F30300D0B8C9 /* Fonts */ = {
+		50C4681A21662D35000187D7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5090DBAB2154F30400D0B8C9 /* Merriweather-BoldItalic.otf */,
-				5090DBAC2154F30400D0B8C9 /* JosefinSans-Italic.ttf */,
-				5090DBAD2154F30400D0B8C9 /* OpenSans-Semibold.ttf */,
-				5090DBAE2154F30400D0B8C9 /* JosefinSans-Thin.ttf */,
-				5090DBAF2154F30400D0B8C9 /* JosefinSans-Bold.ttf */,
-				5090DBB02154F30400D0B8C9 /* JosefinSans-Light.ttf */,
-				5090DBB12154F30400D0B8C9 /* JosefinSans-LightItalic.ttf */,
-				5090DBB22154F30400D0B8C9 /* OpenSans-Light.ttf */,
-				5090DBB32154F30400D0B8C9 /* Merriweather-Bold.otf */,
-				5090DBB42154F30400D0B8C9 /* OpenSans-Italic.ttf */,
-				5090DBB52154F30400D0B8C9 /* Merriweather-Regular.otf */,
-				5090DBB62154F30400D0B8C9 /* Merriweather-Light.otf */,
-				5090DBB72154F30400D0B8C9 /* JosefinSans-SemiBold.ttf */,
-				5090DBB82154F30400D0B8C9 /* Merriweather-Black.otf */,
-				5090DBB92154F30400D0B8C9 /* OpenSans-ExtraBold.ttf */,
-				5090DBBA2154F30400D0B8C9 /* JosefinSans-Regular.ttf */,
-				5090DBBB2154F30400D0B8C9 /* Merriweather-LightItalic.otf */,
-				5090DBBC2154F30400D0B8C9 /* OpenSans-LightItalic.ttf */,
-				5090DBBD2154F30400D0B8C9 /* OpenSans-Bold.ttf */,
-				5090DBBE2154F30400D0B8C9 /* Merriweather-Italic.otf */,
-				5090DBBF2154F30400D0B8C9 /* OpenSans-SemiboldItalic.ttf */,
-				5090DBC02154F30400D0B8C9 /* JosefinSans-BoldItalic.ttf */,
-				5090DBC12154F30400D0B8C9 /* OpenSans-ExtraBoldItalic.ttf */,
-				5090DBC22154F30400D0B8C9 /* JosefinSans-ThinItalic.ttf */,
-				5090DBC32154F30400D0B8C9 /* OpenSans-Regular.ttf */,
-				5090DBC42154F30400D0B8C9 /* OpenSans-BoldItalic.ttf */,
-				5090DBC52154F30400D0B8C9 /* JosefinSans-SemiBoldItalic.ttf */,
-				5090DBC62154F30400D0B8C9 /* Merriweather-BlackItalic.otf */,
+				50C4681B21662D35000187D7 /* Merriweather-BoldItalic.otf */,
+				50C4681C21662D35000187D7 /* JosefinSans-Italic.ttf */,
+				50C4681D21662D35000187D7 /* OpenSans-Semibold.ttf */,
+				50C4681E21662D35000187D7 /* JosefinSans-Thin.ttf */,
+				50C4681F21662D35000187D7 /* JosefinSans-Bold.ttf */,
+				50C4682021662D35000187D7 /* JosefinSans-Light.ttf */,
+				50C4682121662D35000187D7 /* JosefinSans-LightItalic.ttf */,
+				50C4682221662D35000187D7 /* OpenSans-Light.ttf */,
+				50C4682321662D35000187D7 /* Merriweather-Bold.otf */,
+				50C4682421662D35000187D7 /* OpenSans-Italic.ttf */,
+				50C4682521662D35000187D7 /* Merriweather-Regular.otf */,
+				50C4682621662D35000187D7 /* Merriweather-Light.otf */,
+				50C4682721662D35000187D7 /* JosefinSans-SemiBold.ttf */,
+				50C4682821662D35000187D7 /* Merriweather-Black.otf */,
+				50C4682921662D35000187D7 /* OpenSans-ExtraBold.ttf */,
+				50C4682A21662D35000187D7 /* JosefinSans-Regular.ttf */,
+				50C4682B21662D35000187D7 /* Merriweather-LightItalic.otf */,
+				50C4682C21662D35000187D7 /* OpenSans-LightItalic.ttf */,
+				50C4682D21662D35000187D7 /* OpenSans-Bold.ttf */,
+				50C4682E21662D35000187D7 /* Merriweather-Italic.otf */,
+				50C4682F21662D35000187D7 /* OpenSans-SemiboldItalic.ttf */,
+				50C4683021662D35000187D7 /* JosefinSans-BoldItalic.ttf */,
+				50C4683121662D35000187D7 /* OpenSans-ExtraBoldItalic.ttf */,
+				50C4683221662D35000187D7 /* JosefinSans-ThinItalic.ttf */,
+				50C4683321662D35000187D7 /* OpenSans-Regular.ttf */,
+				50C4683421662D35000187D7 /* OpenSans-BoldItalic.ttf */,
+				50C4683521662D35000187D7 /* JosefinSans-SemiBoldItalic.ttf */,
+				50C4683621662D35000187D7 /* Merriweather-BlackItalic.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -263,42 +265,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5090DBC82154F30400D0B8C9 /* JosefinSans-Italic.ttf in Resources */,
-				5090DBDF2154F30400D0B8C9 /* OpenSans-Regular.ttf in Resources */,
-				5090DBC92154F30400D0B8C9 /* OpenSans-Semibold.ttf in Resources */,
+				50C4684D21662D36000187D7 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				50C4684C21662D36000187D7 /* JosefinSans-BoldItalic.ttf in Resources */,
+				50C4683921662D36000187D7 /* OpenSans-Semibold.ttf in Resources */,
+				50C4685121662D36000187D7 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
 				5090DBA62154EF0100D0B8C9 /* Challenge.storyboard in Resources */,
-				5090DBD52154F30400D0B8C9 /* OpenSans-ExtraBold.ttf in Resources */,
-				5090DBCF2154F30400D0B8C9 /* Merriweather-Bold.otf in Resources */,
-				5090DBE12154F30400D0B8C9 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
-				5090DBD72154F30400D0B8C9 /* Merriweather-LightItalic.otf in Resources */,
+				50C4683721662D36000187D7 /* Merriweather-BoldItalic.otf in Resources */,
+				50C4684321662D36000187D7 /* JosefinSans-SemiBold.ttf in Resources */,
+				50C4683D21662D36000187D7 /* JosefinSans-LightItalic.ttf in Resources */,
+				50C4684021662D36000187D7 /* OpenSans-Italic.ttf in Resources */,
 				501D9C702154DC7A0089B4A4 /* LaunchScreen.storyboard in Resources */,
-				5090DBDC2154F30400D0B8C9 /* JosefinSans-BoldItalic.ttf in Resources */,
-				5090DBCD2154F30400D0B8C9 /* JosefinSans-LightItalic.ttf in Resources */,
+				50C4683B21662D36000187D7 /* JosefinSans-Bold.ttf in Resources */,
+				50C4684A21662D36000187D7 /* Merriweather-Italic.otf in Resources */,
 				5090DBA92154EF0100D0B8C9 /* Write.storyboard in Resources */,
-				5090DBD32154F30400D0B8C9 /* JosefinSans-SemiBold.ttf in Resources */,
+				50C4684221662D36000187D7 /* Merriweather-Light.otf in Resources */,
 				5090DBA72154EF0100D0B8C9 /* Read.storyboard in Resources */,
-				5090DBC72154F30400D0B8C9 /* Merriweather-BoldItalic.otf in Resources */,
-				5090DBD22154F30400D0B8C9 /* Merriweather-Light.otf in Resources */,
-				5090DBD02154F30400D0B8C9 /* OpenSans-Italic.ttf in Resources */,
-				5090DBDE2154F30400D0B8C9 /* JosefinSans-ThinItalic.ttf in Resources */,
-				5090DBE22154F30400D0B8C9 /* Merriweather-BlackItalic.otf in Resources */,
-				5090DBD62154F30400D0B8C9 /* JosefinSans-Regular.ttf in Resources */,
+				50C4683A21662D36000187D7 /* JosefinSans-Thin.ttf in Resources */,
+				50C4684621662D36000187D7 /* JosefinSans-Regular.ttf in Resources */,
+				50C4684821662D36000187D7 /* OpenSans-LightItalic.ttf in Resources */,
+				50C4684421662D36000187D7 /* Merriweather-Black.otf in Resources */,
+				50C4685221662D36000187D7 /* Merriweather-BlackItalic.otf in Resources */,
+				50C4684721662D36000187D7 /* Merriweather-LightItalic.otf in Resources */,
 				501D9C8B2154ECA90089B4A4 /* Settings.storyboard in Resources */,
-				5090DBDA2154F30400D0B8C9 /* Merriweather-Italic.otf in Resources */,
-				5090DBDB2154F30400D0B8C9 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				50C4684921662D36000187D7 /* OpenSans-Bold.ttf in Resources */,
+				50C4684121662D36000187D7 /* Merriweather-Regular.otf in Resources */,
+				50C4684521662D36000187D7 /* OpenSans-ExtraBold.ttf in Resources */,
+				50C4683C21662D36000187D7 /* JosefinSans-Light.ttf in Resources */,
+				50C4685021662D36000187D7 /* OpenSans-BoldItalic.ttf in Resources */,
 				501D9C6D2154DC7A0089B4A4 /* Assets.xcassets in Resources */,
-				5090DBCE2154F30400D0B8C9 /* OpenSans-Light.ttf in Resources */,
-				5090DBCB2154F30400D0B8C9 /* JosefinSans-Bold.ttf in Resources */,
-				5090DBE02154F30400D0B8C9 /* OpenSans-BoldItalic.ttf in Resources */,
 				5090DBA82154EF0100D0B8C9 /* Daily.storyboard in Resources */,
 				501D9C6B2154DC710089B4A4 /* Main.storyboard in Resources */,
-				5090DBD42154F30400D0B8C9 /* Merriweather-Black.otf in Resources */,
-				5090DBCA2154F30400D0B8C9 /* JosefinSans-Thin.ttf in Resources */,
-				5090DBD92154F30400D0B8C9 /* OpenSans-Bold.ttf in Resources */,
-				5090DBCC2154F30400D0B8C9 /* JosefinSans-Light.ttf in Resources */,
-				5090DBD82154F30400D0B8C9 /* OpenSans-LightItalic.ttf in Resources */,
-				5090DBDD2154F30400D0B8C9 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				5090DBD12154F30400D0B8C9 /* Merriweather-Regular.otf in Resources */,
+				50C4684F21662D36000187D7 /* OpenSans-Regular.ttf in Resources */,
+				50C4683821662D36000187D7 /* JosefinSans-Italic.ttf in Resources */,
+				50C4683F21662D36000187D7 /* Merriweather-Bold.otf in Resources */,
+				50C4683E21662D36000187D7 /* OpenSans-Light.ttf in Resources */,
+				50C4684B21662D36000187D7 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				50C4684E21662D36000187D7 /* JosefinSans-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,9 +312,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				501D9C682154DC710089B4A4 /* LoginViewController.swift in Sources */,
-				5086D4D3215EAD02009C8D39 /* RoundedButton.swift in Sources */,
 				501D9C7C2154E8040089B4A4 /* MainTabBarViewController.swift in Sources */,
+				50C46854216630F3000187D7 /* DailyViewController.swift in Sources */,
 				5090DBE42154F48900D0B8C9 /* ProfileViewController.swift in Sources */,
+				509CCA9321656ECB00A194C7 /* RoundedButton.swift in Sources */,
 				501D9C662154DC710089B4A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

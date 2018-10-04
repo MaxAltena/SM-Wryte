@@ -23,13 +23,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Wryte" translatesAutoresizingMaskIntoConstraints="NO" id="35l-Ge-lSS">
-                                <rect key="frame" x="62" y="208" width="251" height="251"/>
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="2bD-pX-n79"/>
+                                    <constraint firstAttribute="width" constant="250" id="xsG-nN-hKP"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-e6-8Z4" customClass="RoundedButton" customModule="Wryte" customModuleProvider="target">
-                                <rect key="frame" x="113" y="524" width="149" height="55"/>
+                                <rect key="frame" x="87" y="518" width="200" height="50"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                 <color key="tintColor" red="0.13333333333333333" green="0.34509803921568627" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Get started">
+                                <state key="normal" title="Get started" image="forward-colored">
                                     <color key="titleColor" red="0.13333333333333333" green="0.34509803921568627" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -40,14 +47,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="35l-Ge-lSS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="6VP-ae-eEZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e1d-e6-8Z4" secondAttribute="trailing" constant="113" id="B24-5e-D6T"/>
                             <constraint firstItem="35l-Ge-lSS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GqF-KV-oSx"/>
-                            <constraint firstItem="e1d-e6-8Z4" firstAttribute="top" secondItem="35l-Ge-lSS" secondAttribute="bottom" constant="65" id="Rt8-gt-XqD"/>
-                            <constraint firstItem="35l-Ge-lSS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="188" id="aDF-Mk-TZR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e1d-e6-8Z4" secondAttribute="bottom" constant="88" id="eJi-O7-SH4"/>
+                            <constraint firstItem="e1d-e6-8Z4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="NLe-9Y-iwo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e1d-e6-8Z4" secondAttribute="bottom" constant="99" id="OBw-Fv-3xv"/>
                             <constraint firstItem="35l-Ge-lSS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f0e-NN-D0E"/>
-                            <constraint firstItem="e1d-e6-8Z4" firstAttribute="centerX" secondItem="35l-Ge-lSS" secondAttribute="centerX" id="j82-fU-qK7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e1d-e6-8Z4" secondAttribute="trailing" constant="88" id="spN-wh-Imd"/>
+                            <constraint firstItem="e1d-e6-8Z4" firstAttribute="top" secondItem="35l-Ge-lSS" secondAttribute="bottom" constant="59.5" id="xaI-id-O9d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -130,5 +135,6 @@
     </scenes>
     <resources>
         <image name="Logo-Wryte" width="1667" height="1667"/>
+        <image name="forward-colored" width="50.159999847412109" height="50.400001525878906"/>
     </resources>
 </document>
