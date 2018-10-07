@@ -141,8 +141,8 @@
 			children = (
 				501D9C6C2154DC7A0089B4A4 /* Assets.xcassets */,
 				501D9C652154DC710089B4A4 /* AppDelegate.swift */,
-				5093A901216661D10071016A /* GoogleService-Info.plist */,
 				501D9C712154DC7A0089B4A4 /* Info.plist */,
+				5093A901216661D10071016A /* GoogleService-Info.plist */,
 				501D9C7E2154E8220089B4A4 /* Controllers */,
 				509CCA9121656EBD00A194C7 /* Components */,
 				50C4681A21662D35000187D7 /* Fonts */,
@@ -372,6 +372,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wryte/Pods-Wryte-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -379,6 +380,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

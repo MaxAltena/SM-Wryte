@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D563B58DA10FAFE176F01B793D38739"
+               BlueprintIdentifier = "6F1530D6085AA2B2A331F6CD223BA3DC"
                BuildableName = "Pods_Wryte.framework"
                BlueprintName = "Pods-Wryte"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D563B58DA10FAFE176F01B793D38739"
+            BlueprintIdentifier = "6F1530D6085AA2B2A331F6CD223BA3DC"
             BuildableName = "Pods_Wryte.framework"
             BlueprintName = "Pods-Wryte"
             ReferencedContainer = "container:Pods.xcodeproj">

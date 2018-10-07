@@ -9,4 +9,5 @@ target 'Wryte' do
 
   # Pods for Wryte
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 end

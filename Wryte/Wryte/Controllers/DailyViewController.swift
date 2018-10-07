@@ -12,6 +12,7 @@ class DailyViewController: UIViewController {
     @IBOutlet weak var dailyPrompt: UITextView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var publishButton: RoundedButton!
+
     
     let dailyPrompts = ["Lorem ipsum 0", "Lorem ipsum 1", "Lorem ipsum 2", "Lorem ipsum 3", "Lorem ipsum 4", "Lorem ipsum 5", "Lorem ipsum 6", "Lorem ipsum 7"];
     
