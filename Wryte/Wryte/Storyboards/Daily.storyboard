@@ -37,7 +37,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RzP-5x-qYb" customClass="RoundedButton" customModule="Wryte" customModuleProvider="target">
-                                <rect key="frame" x="200" y="558" width="150" height="35"/>
+                                <rect key="frame" x="200" y="540" width="150" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
@@ -47,6 +47,9 @@
                                 <state key="normal" title="Publish" image="forward-colored">
                                     <color key="titleColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="publishClicked:" destination="nxO-Hv-GpE" eventType="touchUpInside" id="eOc-rq-qJC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The prompt to write about today:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3R-P0-na1">
                                 <rect key="frame" x="25" y="89" width="325" height="22"/>
@@ -66,6 +69,36 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nice story!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FL0-he-04r">
+                                <rect key="frame" x="106" y="180" width="162.5" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Merriweather-Bold" family="Merriweather" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="{daily story stuff}" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTK-ND-5Yz">
+                                <rect key="frame" x="25" y="300" width="325" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="getStarted" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rY-ED-nQO" customClass="RoundedButton" customModule="Wryte" customModuleProvider="target">
+                                <rect key="frame" x="87" y="501" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                                <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Read" image="forward-colored">
+                                    <color key="titleColor" red="0.1333333333" green="0.34509803919999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="T1Z-SI-imR" kind="show" id="iGG-fX-aZK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Md1-41-VUh"/>
@@ -73,8 +106,12 @@
                     <navigationItem key="navigationItem" title="Daily" id="pJG-uS-Isx"/>
                     <connections>
                         <outlet property="dailyPrompt" destination="ptU-dQ-7C0" id="Tyx-66-4TF"/>
-                        <outlet property="publishButton" destination="RzP-5x-qYb" id="APO-qq-KFw"/>
+                        <outlet property="doneLabel" destination="FL0-he-04r" id="0do-nh-tf4"/>
+                        <outlet property="doneReadButton" destination="1rY-ED-nQO" id="buS-yY-3Qf"/>
+                        <outlet property="doneText" destination="kTK-ND-5Yz" id="nVe-4S-Iam"/>
+                        <outlet property="publishButton" destination="RzP-5x-qYb" id="e91-XU-Eil"/>
                         <outlet property="textView" destination="Yja-Cb-khH" id="ndd-bj-2NQ"/>
+                        <outlet property="topText" destination="m3R-P0-na1" id="91i-xn-1Pf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZBM-7j-jaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,6 +138,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBa-3b-vrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5161" y="582"/>
+        </scene>
+        <!--Read-->
+        <scene sceneID="B48-1n-2fa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Read" id="T1Z-SI-imR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0nt-jd-cfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6404" y="581"/>
         </scene>
     </scenes>
     <resources>

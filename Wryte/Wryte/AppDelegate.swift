@@ -10,6 +10,11 @@ import UIKit
 import Firebase
 
 var isLoggedIn = "false"
+var username = ""
+var todayPromptText = ""
+var todayPromptID = ""
+var dailyDone = "false"
+var ref: DatabaseReference!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,16 +24,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
+        getDailyPrompt()
+        
         let defaults = UserDefaults.standard
-        let defaultValue = ["isLoggedIn" : ""]
+        let defaultValue = ["isLoggedIn" : "", "username" : ""]
         defaults.register(defaults: defaultValue)
         
         if defaults.string(forKey: "isLoggedIn") == "" {
             defaults.set(isLoggedIn, forKey: "isLoggedIn")
         }
         
-        let token = defaults.string(forKey: "isLoggedIn")
-        isLoggedIn = token ?? "false"
+        if defaults.string(forKey: "username") == "" {
+            defaults.set(username, forKey: "username")
+        }
+        
+        let token_isLoggedIn = defaults.string(forKey: "isLoggedIn")
+        isLoggedIn = token_isLoggedIn ?? "false"
+        
+        let token_username = defaults.string(forKey: "username")
+        username = token_username ?? ""
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -54,6 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         let defaults = UserDefaults.standard
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
+        defaults.set(username, forKey: "username")
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -68,8 +83,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         let defaults = UserDefaults.standard
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
+        defaults.set(username, forKey: "username")
     }
 
-
+    func getDailyPrompt() {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.dateFormat = "dd/MM/yyyy"
+        let todayDate = formatter.string(from: Date())
+        
+        ref = Database.database().reference()
+        ref.child("prompts").observeSingleEvent(of: .value, with: { (snapshot) in
+            let prompts = snapshot.value as? NSDictionary
+            
+            for prompt in prompts! {
+                let value = prompt.value as? NSDictionary
+                let date = value?["date"] as? String
+                let daily = value?["daily"] as? Bool
+                if(date == todayDate && daily == true){
+                    todayPromptText = value?["prompt"] as? String ?? "No daily prompt today"
+                    todayPromptID = prompt.key as! String
+                }
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
 }
 

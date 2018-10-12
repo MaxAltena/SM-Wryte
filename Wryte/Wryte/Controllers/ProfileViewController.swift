@@ -10,12 +10,15 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBAction func logoutPressed(_ sender: Any) {
         isLoggedIn = "false"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameLabel.text = username
     }
 
 }

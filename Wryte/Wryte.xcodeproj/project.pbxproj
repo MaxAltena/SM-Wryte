@@ -51,6 +51,7 @@
 		50C4685121662D36000187D7 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683521662D35000187D7 /* JosefinSans-SemiBoldItalic.ttf */; };
 		50C4685221662D36000187D7 /* Merriweather-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4683621662D35000187D7 /* Merriweather-BlackItalic.otf */; };
 		50C46854216630F3000187D7 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C46853216630F2000187D7 /* DailyViewController.swift */; };
+		50DCA76A216F8F4A00C3EC84 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCA769216F8F4A00C3EC84 /* ReadViewController.swift */; };
 		6DA21541C9416F0BD2032445 /* Pods_Wryte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B74B91C64AE74AC84F6B5D /* Pods_Wryte.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +72,7 @@
 		5090DBA52154EF0100D0B8C9 /* Write.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Write.storyboard; sourceTree = "<group>"; };
 		5090DBE32154F48900D0B8C9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5093A8FF2166552C0071016A /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
-		5093A901216661D10071016A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5093A901216661D10071016A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		509CCA9221656ECB00A194C7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		50C4681B21662D35000187D7 /* Merriweather-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.otf"; sourceTree = "<group>"; };
 		50C4681C21662D35000187D7 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		50C4683521662D35000187D7 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		50C4683621662D35000187D7 /* Merriweather-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.otf"; sourceTree = "<group>"; };
 		50C46853216630F2000187D7 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyViewController.swift; path = Wryte/Controllers/DailyViewController.swift; sourceTree = SOURCE_ROOT; };
+		50DCA769216F8F4A00C3EC84 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		B4DD6BDC481C866E56A15BC6 /* Pods-Wryte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wryte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wryte/Pods-Wryte.debug.xcconfig"; sourceTree = "<group>"; };
 		F9B74B91C64AE74AC84F6B5D /* Pods_Wryte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wryte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 				501D9C672154DC710089B4A4 /* LoginViewController.swift */,
 				501D9C7B2154E8040089B4A4 /* MainTabBarViewController.swift */,
 				5090DBE32154F48900D0B8C9 /* ProfileViewController.swift */,
+				50DCA769216F8F4A00C3EC84 /* ReadViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				50C46854216630F3000187D7 /* DailyViewController.swift in Sources */,
 				5090DBE42154F48900D0B8C9 /* ProfileViewController.swift in Sources */,
 				509CCA9321656ECB00A194C7 /* RoundedButton.swift in Sources */,
+				50DCA76A216F8F4A00C3EC84 /* ReadViewController.swift in Sources */,
 				501D9C662154DC710089B4A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

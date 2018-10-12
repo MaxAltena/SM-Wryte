@@ -12,7 +12,7 @@
         <!--Read-->
         <scene sceneID="bUe-zC-dKb">
             <objects>
-                <viewController id="nmr-cA-inl" userLabel="Read" sceneMemberID="viewController">
+                <viewController id="nmr-cA-inl" userLabel="Read" customClass="ReadViewController" customModule="Wryte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Opp-QP-Re1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -42,11 +42,21 @@
                                     <segue destination="CmM-2t-iV3" kind="show" id="Bqw-mn-Wlt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{username}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-rU-8ps">
+                                <rect key="frame" x="148" y="410" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rbK-M4-xxi"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settingsTabIcon" id="cXs-Ia-JIW"/>
+                    <connections>
+                        <outlet property="usernameLabel" destination="xFf-rU-8ps" id="xQ5-bs-XJI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSR-DC-SQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
