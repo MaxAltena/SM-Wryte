@@ -17,11 +17,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextView: UITextView!
     
     @IBAction func getStartedPressed(_ sender: Any) {
-        isLoggedIn = "true"
+        isLoggedIn = true
         username = createNewUsername()
+        let defaults = UserDefaults.standard
+        defaults.set(isLoggedIn, forKey: "isLoggedIn")
+        defaults.set(username, forKey: "username")
         
         self.wbBottom.text = "\(username)!"
-        self.usernameTextView.text = "We've missed you...\nGreat to have the and only \(username) back on\nthe Wryters side!"
+        self.usernameTextView.text = "We've missed you...\nGreat to have the one and only \(username) back on\nthe Wryters side!"
         
         UIView.animate(withDuration: 1, delay: 0.25, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
             self.imageView.transform = self.imageView.transform.translatedBy(x: 0, y: -75)

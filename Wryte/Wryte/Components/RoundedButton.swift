@@ -23,7 +23,7 @@ class RoundedButton: UIButton {
         layer.borderColor = isEnabled ? tintColor.cgColor : UIColor.lightGray.cgColor
         if imageView != nil {
             imageEdgeInsets = UIEdgeInsets(top: 12, left: (bounds.width - 40), bottom: 12, right: 12)
-            titleEdgeInsets = UIEdgeInsets(top: 0, left: -100, bottom: 0, right: (imageView?.frame.width)! + 10)
+            titleEdgeInsets = UIEdgeInsets(top: 0, left: -110, bottom: 0, right: (imageView?.frame.width)! + 10)
         }
     }
 }

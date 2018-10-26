@@ -9,11 +9,11 @@
 import UIKit
 import Firebase
 
-var isLoggedIn = "false"
+var isLoggedIn = false
 var username = ""
 var todayPromptText = ""
 var todayPromptID = ""
-var dailyDone = "false"
+var dailyDone = false
 var ref: DatabaseReference!
 
 @UIApplicationMain
@@ -24,13 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        getDailyPrompt()
-        
         let defaults = UserDefaults.standard
-        let defaultValue = ["isLoggedIn" : "", "username" : ""]
-        defaults.register(defaults: defaultValue)
+        let defaultValues = ["isLoggedIn" : false, "username" : "", "dailyDone": false, "todayPromptID": ""] as [String : Any]
+        defaults.register(defaults: defaultValues)
         
-        if defaults.string(forKey: "isLoggedIn") == "" {
+        if defaults.bool(forKey: "isLoggedIn") == false {
             defaults.set(isLoggedIn, forKey: "isLoggedIn")
         }
         
@@ -38,16 +36,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             defaults.set(username, forKey: "username")
         }
         
-        let token_isLoggedIn = defaults.string(forKey: "isLoggedIn")
-        isLoggedIn = token_isLoggedIn ?? "false"
+        if defaults.bool(forKey: "dailyDone") == false {
+            defaults.set(dailyDone, forKey: "dailyDone")
+        }
+        
+        if defaults.string(forKey: "todayPromptID") == "" {
+            defaults.set(todayPromptID, forKey: "todayPromptID")
+        }
+        
+        let token_isLoggedIn = defaults.bool(forKey: "isLoggedIn")
+        isLoggedIn = token_isLoggedIn
         
         let token_username = defaults.string(forKey: "username")
         username = token_username ?? ""
         
+        let token_dailyDone = defaults.bool(forKey: "dailyDone")
+        dailyDone = token_dailyDone
+        
+        let token_todayPromptID = defaults.string(forKey: "todayPromptID")
+        todayPromptID = token_todayPromptID ?? ""
+        
+        getDailyPrompt()
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        if isLoggedIn == "true" {
+        if(isLoggedIn) {
             let initialViewController: MainTabBarViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainTabBarViewController") as! MainTabBarViewController
             self.window?.rootViewController = initialViewController
         } else {
@@ -69,6 +83,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaults = UserDefaults.standard
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
         defaults.set(username, forKey: "username")
+        defaults.set(dailyDone, forKey: "dailyDone")
+        defaults.set(todayPromptID, forKey: "todayPromptID")
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -84,6 +100,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaults = UserDefaults.standard
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
         defaults.set(username, forKey: "username")
+        defaults.set(dailyDone, forKey: "dailyDone")
+        defaults.set(todayPromptID, forKey: "todayPromptID")
     }
 
     func getDailyPrompt() {
@@ -102,7 +120,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let daily = value?["daily"] as? Bool
                 if(date == todayDate && daily == true){
                     todayPromptText = value?["prompt"] as? String ?? "No daily prompt today"
-                    todayPromptID = prompt.key as! String
+                    
+                    let defaults = UserDefaults.standard
+                    if(dailyDone && todayPromptID == prompt.key as! String) {
+                        dailyDone = false
+                        todayPromptID = prompt.key as! String
+                        defaults.set(dailyDone, forKey: "dailyDone")
+                        defaults.set(todayPromptID, forKey: "todayPromptID")
+                    } else {
+                        todayPromptID = prompt.key as! String
+                        defaults.set(dailyDone, forKey: "dailyDone")
+                        defaults.set(todayPromptID, forKey: "todayPromptID")
+                    }
                 }
             }
         }) { (error) in
@@ -110,4 +139,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
-
