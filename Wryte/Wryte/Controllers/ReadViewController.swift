@@ -9,6 +9,12 @@
 import UIKit
 import FirebaseDatabase
 
+struct item {
+    var key: String
+    var name: String
+    var prompt: String
+}
+
 class ReadTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var promptText: UITextView!
@@ -21,8 +27,8 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     let sections = ["Noticable reads of the day", "Other interesting reads"]
     var items = [
-        [[String:String]()],
-        [[String:String]()]
+        [item](),
+        [item]()
     ]
     var counts = [String: Int]()
     
@@ -35,17 +41,15 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     func viewLoadSetup(){
         self.items = [
-            [[String:String]()],
-            [[String:String]()]
+            [item](),
+            [item]()
         ]
-        self.items[0].remove(at: 0)
-        self.items[1].remove(at: 0)
         self.counts = [String: Int]()
         ref = Database.database().reference()
         ref.child("stories").observeSingleEvent(of: .value, with: { (snapshot) in
             let stories = snapshot.value as? NSDictionary
             
-            var promptsArray = [String]()
+            var promptsArray = [String]();
             for story in stories! {
                 let value = story.value as? NSDictionary
                 let prompt = value?["prompt"] as! String
@@ -68,7 +72,7 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 if(daily){
                     name = "Daily: \(name)"
-                    let promptArray = ["key": key, "name": name, "prompt": prompt]
+                    let promptItem = item(key: key, name: name, prompt: prompt)
                     
                     let formatter = DateFormatter()
                     formatter.dateStyle = .short
@@ -77,14 +81,14 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
                     let yesterdayDate = formatter.string(from: Date().yesterday)
                     let date = value["date"] as! String
                     if(date == todayDate || date == yesterdayDate){
-                        self.items[0].append(promptArray)
+                        self.items[0].append(promptItem)
                     } else {
-                        self.items[1].append(promptArray)
+                        self.items[1].append(promptItem)
                     }
                 } else {
                     name = "Prompt: \(name)"
-                    let promptArray = ["key": key, "name": name, "prompt": prompt]
-                    self.items[1].append(promptArray)
+                    let promptItem = item(key: key, name: name, prompt: prompt)
+                    self.items[1].append(promptItem)
                 }
             }
             self.tableView.reloadData()
@@ -109,9 +113,9 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "readCell", for: indexPath) as! ReadTableViewCell
-        cell.nameLabel.text = items[indexPath.section][indexPath.row]["name"]
-        cell.promptText.text = items[indexPath.section][indexPath.row]["prompt"]
-        let count = counts[items[indexPath.section][indexPath.row]["key"]!] ?? 0
+        cell.nameLabel.text = items[indexPath.section][indexPath.row].name
+        cell.promptText.text = items[indexPath.section][indexPath.row].prompt
+        let count = counts[items[indexPath.section][indexPath.row].key] ?? 0
         cell.countLabel.text = "\(count) stories"
         cell.commentLabel.text = "0 comments"
         return cell
@@ -120,8 +124,9 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
         return self.sections.count
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let key = items[indexPath.section][indexPath.row]["key"]
-        print("Selected row is \(key ?? "{key here}")")
+        let key = items[indexPath.section][indexPath.row].key
+        
+        print("Selected row is \(key)")
     }
 }
 
