@@ -11,8 +11,10 @@ import UIKit
 class SettingsViewController: UIViewController {
     @IBAction func logoutPressed(_ sender: Any) {
         isLoggedIn = false
+        dailyDone = false
         let defaults = UserDefaults.standard
         defaults.set(isLoggedIn, forKey: "isLoggedIn")
+        defaults.set(dailyDone, forKey: "dailyDone")
     }
     @IBOutlet weak var usernameLabel: UILabel!
     

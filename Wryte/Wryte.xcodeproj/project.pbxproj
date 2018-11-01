@@ -24,6 +24,7 @@
 		5093A9002166552C0071016A /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093A8FF2166552C0071016A /* RoundedTextView.swift */; };
 		5093A902216661D10071016A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5093A901216661D10071016A /* GoogleService-Info.plist */; };
 		509CCA9321656ECB00A194C7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CCA9221656ECB00A194C7 /* RoundedButton.swift */; };
+		50B58CD92189E16200FD9F45 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B58CD82189E16200FD9F45 /* PromptViewController.swift */; };
 		50C4683721662D36000187D7 /* Merriweather-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681B21662D35000187D7 /* Merriweather-BoldItalic.otf */; };
 		50C4683821662D36000187D7 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681C21662D35000187D7 /* JosefinSans-Italic.ttf */; };
 		50C4683921662D36000187D7 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50C4681D21662D35000187D7 /* OpenSans-Semibold.ttf */; };
@@ -78,6 +79,7 @@
 		5093A8FF2166552C0071016A /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
 		5093A901216661D10071016A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		509CCA9221656ECB00A194C7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		50B58CD82189E16200FD9F45 /* PromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
 		50C4681B21662D35000187D7 /* Merriweather-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.otf"; sourceTree = "<group>"; };
 		50C4681C21662D35000187D7 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
 		50C4681D21662D35000187D7 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				501A1990218251A7006B3750 /* SettingsViewController.swift */,
 				501A199221825628006B3750 /* ChallengeViewController.swift */,
 				501A1994218258D8006B3750 /* WriteViewController.swift */,
+				50B58CD82189E16200FD9F45 /* PromptViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B58CD92189E16200FD9F45 /* PromptViewController.swift in Sources */,
 				501D9C682154DC710089B4A4 /* LoginViewController.swift in Sources */,
 				501A199321825628006B3750 /* ChallengeViewController.swift in Sources */,
 				501D9C7C2154E8040089B4A4 /* MainTabBarViewController.swift in Sources */,
